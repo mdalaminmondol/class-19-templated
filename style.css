@@ -1,0 +1,466 @@
+/* defont css */
+*{
+    padding: 0;
+    margin: 0;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.container{
+    width: 1180px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+/* defont end */
+
+/* header part start */
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.637);
+    z-index: 99999999;
+}
+.logo{
+    width: 30%;
+}
+.header-menu {
+    width: 70%;
+}
+.header-logo img{
+    width: 320px;
+}
+.header-menu{}
+.header-menu ul{
+    list-style: none;
+    text-align: right;
+}
+.header-menu ul li{
+    display: inline-block;
+    /* border-left: 1px solid #ddd;  */
+   
+}
+.header-menu ul li a{
+    display: inline-block;
+    padding: 30px 15px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+   
+   position: relative;
+    
+}
+ .a::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height:5%;
+    width: 100%;
+    background: #C99853;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: center;
+    transform: scaleX(0);
+   
+}
+.header-menu ul li:hover .a::after{
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  transform: scaleX(1);
+  
+}
+
+.header-menu ul li a span{
+    color: #A16323;
+}
+
+.header-menu ul li a:hover{
+    color: #A16323;
+}
+
+/* Dropdown part start */
+.header-menu ul li{
+    position: relative;
+    
+}
+.header-menu ul li ul{
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    width: 300px;
+    background: #F4F4F4;
+    display: inline-block;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: center;
+    transition: .4s;
+}
+.header-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.header-menu ul li ul li{
+    display: block;
+}
+.header-menu ul li ul li a{
+    display: block;
+    color: #5F6E89;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+}
+.header-menu ul li ul li a:hover{
+    background: #CBCBCB;
+}
+/* Dropdown part end */
+
+
+/* header part end */
+
+/* banner section part start */
+
+.banner{
+    background: url(./image/banner.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 200px 0; 
+    position: relative;   
+    z-index: 1;
+   text-align: center;
+}
+.banner::after{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.705);
+    position: absolute;
+    z-index: -1;
+}
+.baner-heading{
+    /* text-align: center; */
+    color: white;
+    
+}
+.baner-heading h1{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+.baner-heading h2{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 30px 0;
+    position: relative;
+}
+.baner-heading h2::before{
+    content: "";
+    top: 15px;
+    left:320px;
+    height:3px;
+    width: 100px;
+    background: white;
+    position: absolute;
+   
+}
+.baner-heading h2::after{
+    content: "";
+    top: 15px;
+    right:325px;
+    height:3px;
+    width: 100px;
+    background: white;
+    position: absolute;
+   
+}
+.baner-heading .btn{
+    font-family: 'Work Sans', sans-serif;
+    display: inline-block;
+    font-size: 20px;
+    padding: 15px 40px;
+    border: 1px solid #C69453;
+    border-radius: 23px;
+    background: #C69453;
+    color: white;
+    transition: .4s;
+    font-weight: 600;
+}
+.baner-heading .btn:hover{
+    background: white;
+    color: #C69453;
+}
+/* banner section part end */
+
+/* product section part start */
+.product{
+    background: #F8F8F8;
+    padding: 100px 0;
+}
+.product-itam {
+    width: 23%;
+    margin-right: 2%;
+    background: #fff;
+    padding: 30px 23px;
+    box-sizing: border-box;
+    box-shadow: 10px 15px 30px 10px #ddd;
+}
+.product-itam .p-logo{
+    text-align: center;
+}
+.product-itam .p-logo img{
+    display: inline-block;
+    
+}
+
+.p-heading{
+    text-align: center;
+}
+.p-heading h3{
+    font-family: 'Work Sans', sans-serif;
+    padding: 15px 0;
+    font-size: 15px;
+
+}
+.p-heading p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    color: #767676;
+   padding-bottom: 50px;
+}
+.p-heading .btn{
+    font-family: 'Work Sans', sans-serif;
+    display: inline-block;
+    padding: 10px 25px;
+    border: 1px solid #A16323;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    background: #A16323;
+    color: white;
+    transition: .4s;
+    
+}
+.p-heading .btn:hover {
+    background: #000000 !important;
+    color:white !important;
+    
+}
+
+/* hover part start */
+.product-itam:hover .p-logo{
+    transform: rotateY(360deg);
+    transition: .4s;
+    
+}
+.product-itam:hover{
+    background: #E8E6E4;
+    
+}
+.product-itam:hover .btn{
+    background: white;
+    color:#A16323 ;
+}
+.product-itam:hover .p-heading {
+    background: #E8E6E4;
+    
+
+}
+.product-itam:hover .p-heading p{
+    color: #767676;
+}
+/* hover part end */
+
+
+
+/* product section part end */
+
+/* about part start */
+.about{
+    padding: 40px 0;
+    background: #F8F8F8;
+}
+.about-ve{
+    width: 48%;
+}
+.about-contant{
+    width: 48%;
+}
+
+.about-itams{
+    margin-left: 7%;
+    
+}
+.about-itams h1{
+    font-size: 40px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+   
+}
+.about-itams h1 span{
+    color: #C99853;
+}
+.about-itams p{
+   margin: 30px 0;
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.6em;
+    color: #767676;
+ 
+
+}
+details {
+    margin-bottom: 30px;
+}
+details summary{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    color: #767676;
+}
+details summary p{
+    font-family: 'Work Sans', sans-serif;
+    color: #767676;
+    font-size: 20px;
+}
+.btn{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    border: 1px solid black;
+    background: black;
+    padding: 10px 20px;
+    transition: .4s;
+}
+.btn:hover{
+    background: #A16323;
+    border: 1px solid #A16323;
+}
+/* about part end */
+
+/* contact part start */
+.contact{
+    padding: 60px 0;
+    background-image: url(./image/ia_200000022.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+} 
+.contact-left{
+    width: 48%;
+}
+.contact-rigth{
+    width: 48%;
+}
+.contact-itam{
+
+}
+.contact-itam h1{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+
+}
+.contact-itam p{
+    font-size: 15px;
+    font-family: 'Work Sans', sans-serif;
+    color: #767676;
+    margin: 50px 0;
+}
+.contact-form .al{
+    width: 600px;
+    height: 50px;
+    margin: auto;
+    font-size: 15px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    display: inline-block;
+    outline: none;
+    
+}
+.contact-form .al:focus{
+    border: 2px solid black;
+    display: inline-block;
+   
+}
+.contact-form .ala{
+    width: 600px;
+    margin: auto;
+    font-size: 15px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    display: inline-block;
+    outline: none;
+}
+.contact-form .ala:focus{
+    border: 2px solid black;
+    display: inline-block;
+   
+}
+.contact-form .btn{
+    background: #A16323;
+    border: 1px solid #A16323;
+}
+
+/* contact part end */
+
+/* footer part start */
+.footer{
+    background:#6D6D6D ;
+   
+}
+.footer-left {
+    width: 60%;
+}
+.footer-right{
+    width: 40%;
+}
+.footer-contant p{
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    padding-top: 20px 0;
+    line-height: 97px;
+
+}
+.footer-menu{
+    text-align: right;
+}
+.footer-menu ul{ 
+    list-style: none;
+}
+.footer-menu ul li{
+    display: inline-block;
+}
+.footer-menu ul li a{
+    display: inline-block;
+    font-size: 30px;
+    padding: 30px 20px;
+    color: white;
+}
+/* footer part end */
+
